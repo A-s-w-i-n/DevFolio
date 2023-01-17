@@ -1,9 +1,9 @@
-function validateform(){
+function formsubmission(){
   var name=document.Submission.name.value;
   var email=document.Submission.email.value;
   var subject=document.Submission.subject.value;
   var message=document.Submission.message.value; 
-  var regex=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/gm;
+  var regex=/^([a-zA-Z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/gm;
  var err=document.getElementById('error-message');
   
  if(name==""){
